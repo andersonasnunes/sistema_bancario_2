@@ -49,81 +49,82 @@ O projeto permite **criar clientes, contas, realizar depósitos, saques e emitir
 
 ## 🖥️ Menu Interativo
 
-Ao executar o programa, será exibido o seguinte menu no terminal:
+Ao executar o programa, será exibido o seguinte menu no terminal:  
 
-=============== MENU ================
-[d] Depositar
-[s] Sacar
-[e] Extrato
-[nc] Nova conta
-[lc] Listar contas
-[nu] Novo usuário
-[q] Sair
-=>
+
+=============== MENU ================  
+[d] Depositar  
+[s] Sacar  
+[e] Extrato  
+[nc] Nova conta  
+[lc] Listar contas  
+[nu] Novo usuário  
+[q] Sair  
+=>  
 
 ---
 
 ## 📂 Exemplo de Uso
 
-### 1️⃣ Criar Cliente
-Informe o CPF (somente número): 12345678900
-Informe o nome completo: João Silva
-Informe a data de nascimento (dd-mm-aaaa): 01-01-1990
-Informe o endereço (logradouro, nro - bairro - cidade/sigla estado): Rua A, 10 - Centro - SP/SP
-=== Cliente criado com sucesso! ===
+### 1️⃣ Criar Cliente  
+Informe o CPF (somente número): 12345678900  
+Informe o nome completo: João Silva  
+Informe a data de nascimento (dd-mm-aaaa): 01-01-1990  
+Informe o endereço (logradouro, nro - bairro - cidade/sigla estado): Rua A, 10 - Centro - SP/SP  
+=== Cliente criado com sucesso! ===  
 
 
 ### 2️⃣ Criar Conta
-Informe o CPF do cliente: 12345678900
-=== Conta criada com sucesso! ===
+Informe o CPF do cliente: 12345678900  
+=== Conta criada com sucesso! ===  
 
 
-### 3️⃣ Realizar Depósito
-Informe o CPF do cliente: 12345678900
-Informe o valor do depósito: 1000
-=== Depósito realizado com sucesso! ===
+### 3️⃣ Realizar Depósito  
+Informe o CPF do cliente: 12345678900  
+Informe o valor do depósito: 1000  
+=== Depósito realizado com sucesso! ===  
 
 
-### 4️⃣ Efetuar Saque
-Informe o CPF do cliente: 12345678900
-Informe o valor do saque: 200
-=== Saque realizado com sucesso! ===
+### 4️⃣ Efetuar Saque  
+Informe o CPF do cliente: 12345678900  
+Informe o valor do saque: 200  
+=== Saque realizado com sucesso! ===  
 
 
-### 5️⃣ Consultar Extrato
-================ EXTRATO ================
-Saque:
-R$ 200.00
-Saldo:
-R$ 800.00
+### 5️⃣ Consultar Extrato  
+================ EXTRATO ================  
+Saque:  
+R$ 200.00  
+Saldo:  
+R$ 800.00  
 
 
----
+---  
 
-## 🧩 Padrões e Conceitos Utilizados
+## 🧩 Padrões e Conceitos Utilizados  
 
-- 🔹 **Abstração:** Classes genéricas (`Transacao`, `Conta`) que servem de modelo.  
-- 🔹 **Herança:** `PessoaFisica` e `ContaCorrente` derivam de classes bases.  
+- 🔹 **Abstração:** Classes genéricas (`Transacao`, `Conta`) que servem de modelo.    
+- 🔹 **Herança:** `PessoaFisica` e `ContaCorrente` derivam de classes bases.   
 - 🔹 **Polimorfismo:** Métodos sobrescritos, como `sacar()` em `ContaCorrente`.  
 - 🔹 **Encapsulamento:** Atributos privados (`_saldo`, `_cliente`, etc).  
 - 🔹 **Iterador Customizado:** `ContasIterador` para percorrer contas.  
 - 🔹 **Decorator:** `log_transacao` registra operações no terminal.  
 
----
+---  
 
-## 🧰 Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas  
 
-- 🐍 **Python 3.10+**
-- 📦 Módulos padrão:
-  - `textwrap`
-  - `datetime`
-  - `abc`
+- 🐍 **Python 3.10+**  
+- 📦 Módulos padrão:  
+  - `textwrap`  
+  - `datetime`  
+  - `abc`  
 
----
+---  
+ 
+## 🏁 Como Executar  
 
-## 🏁 Como Executar
-
-1. **Clone o repositório**
-   ```bash
+1. **Clone o repositório**  
+   ```bash  
    git clone https://github.com/seu-usuario/sistema-bancario-python.git
    cd sistema-bancario-python
